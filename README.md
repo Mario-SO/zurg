@@ -1,15 +1,23 @@
 # zurg
 
-To install dependencies:
+An echo server built in Zig with a Bun TypeScript facade.
+
+## Install
 
 ```bash
 bun install
 ```
 
-To run:
+## Run
 
 ```bash
-bun run index.ts
+bun run start
 ```
 
-This project was created using `bun init` in bun v1.3.4. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+The `start` script builds the Zig dynamic library (`zzurg/`) and then runs `src/index.ts`. If you have already built the library yourself (`cd zzurg && zig build`), you can also launch the entrypoint directly with `bun run src/index.ts`.
+
+## Test
+
+```bash
+bun test
+```
