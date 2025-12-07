@@ -2,6 +2,9 @@
   "name": "zurg",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "start": "cd zzurg && zig build && cd .. && bun run index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
